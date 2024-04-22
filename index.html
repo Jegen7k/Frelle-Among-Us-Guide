@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
+<script src="Main.js"></script>
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
     <meta name="viewport"
@@ -13,6 +14,30 @@
 "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
     </script>
     <link href="style.css" charset="utf-8" rel="stylesheet" type="text/css"> 
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #999999;
+}
+</style>	
     <style class="newStyle1">
         body{
         padding:10% 3% 10% 3%;
@@ -45,10 +70,6 @@
 		font-size: x-large;
 		color: #01D0A2;
 	}
-	.auto-style3 {
-		font-size: x-large;
-		color: #00BE9E;
-	}
 	.auto-style4 {
 		font-size: xx-large;
 		color: #00BE9E;
@@ -72,27 +93,39 @@
 		font-size: xx-large;
 		font-family: Arial, Helvetica, sans-serif;
 	}
-    .auto-style11 {
-		font-family: Oswald, sans-serif;
-		font-size: xx-large;
+    .auto-style13 {
+		color: #F1AD03;
 	}
-    .auto-style12 {
-		font-size: xx-large;
-		color: #D5A400;
+    .auto-style14 {
+		color: #CA0000;
+	}
+    .auto-style15 {
+		color: #00C0CA;
+	}
+    .auto-style16 {
+		color: #C32201;
+	}
+	.auto-style17 {
+		color: #DA7903;
+	}
+	.auto-style18 {
+		color: #03DAD9;
 	}
     </style>
 </head>
 <body>
+<div class="header"	
 <p class="auto-style9">
-<a href="https://www.twitch.tv/fr3lle"><button class="button-37">FRELLE</button><a/>
+<a href="index.html"><button class="button-36">ROLL GUIDE</button></a>
+<a href="install.html"><button class="button-36">INSTALLATIONS GUIDE</button><a/>
+<a href="https://www.twitch.tv/fr3lle"><button class="button-36">FRELLE</button><a/>
+</div>
     <div class="mode">
         Dark mode:             
         <span class="change">OFF</span>
     </div> 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<a href="index.html"><button class="button-36">ROLL GUIDE</button></a>
-<a href="install.html"><button class="button-36">INSTALLATIONS GUIDE</button><a/>
 <!--"<button class="button-36" role="button">HIGHLIGHTS (KOMMER SNART)</button>--->
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -105,513 +138,547 @@
       </div>
 </div>
 <p class="auto-style4">
-<strong><a name="CREWMATE_ROLLER">CREWMATE ROLLER</a></strong></p>
+<strong><a href="#CREWMATE" name="CREWMATE ROLLER"><span class="auto-style18">CREWMATE ROLLER</span></a></strong></p>
 <p class="auto-style1">
-<a href="#Aurial_">
+<a class="smoothscroll" data-link="Aurial" href="#Aurial">
 <img alt="" height="135" src="Among%20Us%20Roller%20(Bilder)/Aurial.png" width="90" class="auto-style8" /></a>
-<a href="#Detective_">
+<a class="smoothscroll" data-link="Detective" href="#Detective">
 <img alt="" height="103" src="Among%20Us%20Roller%20(Bilder)/Detective.png" width="80" class="auto-style8" /></a>&nbsp;&nbsp;
-<a href="#Haunter_">
+<a class="smoothscroll" data-link="Haunter" href="#Haunter">
 <img alt="" height="103" src="Among%20Us%20Roller%20(Bilder)/Haunter.png" width="62" class="auto-style8" /></a>&nbsp;&nbsp;
-<a href="#Investigator_">
+<a class="smoothscroll" data-link="Investigator" href="#Investigator">
 <img alt="" height="106" src="Among%20Us%20Roller%20(Bilder)/Investigator.png" width="106" class="auto-style8" /></a>
-<a href="#Mystic_">
+<a class="smoothscroll" data-link="Mystic" href="#Mystic">
 <img alt="" height="115" src="Among%20Us%20Roller%20(Bilder)/Mystic.png" width="82" class="auto-style8" /></a>
-<a href="#Oracle_">
+<a class="smoothscroll" data-link="Oracle" href="#Oracle">
 <img alt="" height="109" src="Among%20Us%20Roller%20(Bilder)/Oracle.png" width="74" class="auto-style8" /></a>
-<a href="#Seer_">
+<a class="smoothscroll" data-link="Seer" href="#Seer">
 <img alt="" height="110" src="Among%20Us%20Roller%20(Bilder)/Seer.png" width="67" class="auto-style8" /></a>
-<a href="#Snitch_">
+<a class="smoothscroll" data-link="Snitch" href="#Snitch">
 <img alt="" height="107" src="Among%20Us%20Roller%20(Bilder)/Snitch.png" width="61" class="auto-style8" /></a>
-<a href="#Spy_">
+<a class="smoothscroll" data-link="Spy" href="#Spy">
 <img alt="" height="109" src="Among%20Us%20Roller%20(Bilder)/Spy.png" width="74" class="auto-style8" /></a>
-<a href="#Tracker_">
+<a class="smoothscroll" data-link="Tracker" href="#Tracker">
 <img alt="" height="104" src="Among%20Us%20Roller%20(Bilder)/Tracker.png" width="80" class="auto-style8" /></a>&nbsp;
-<a href="#Trapper_">
+<a class="smoothscroll" data-link="Trapper" href="#Trapper">
 <img alt="" height="100" src="Among%20Us%20Roller%20(Bilder)/Trapper.png" width="72" class="auto-style8" /></a>&nbsp;&nbsp;
-<a href="#Sheriff_">
+<a class="smoothscroll" data-link="Sheriff" href="#Sheriff">
 <img alt="" height="116" src="Among%20Us%20Roller%20(Bilder)/Sheriff.png" width="81" class="auto-style8" /></a>
-<a href="#Vampire_Hunter_">
+<a class="smoothscroll" data-link="Vampire Hunter" href="#Vampire_Hunter">
 <img alt="" height="105" src="Among%20Us%20Roller%20(Bilder)/Vampire%20Hunter.png" width="132" class="auto-style8" /></a>
-<a href="#Veteran_">
+<a class="smoothscroll" data-link="Veteran" href="#Veteran">
 <img alt="" height="110" src="Among%20Us%20Roller%20(Bilder)/Veteran.png" width="67" class="auto-style8" /></a></p>
 <p class="auto-style1">
-<a href="#Vigilante_">
+<a class="smoothscroll" data-link="Vigilante" href="#Vigilante">
 <img alt="" height="104" src="Among%20Us%20Roller%20(Bilder)/Vigilante.png" width="75" class="auto-style8" /></a>&nbsp;
-<a href="#Alturist_">
+<a class="smoothscroll" data-link="Altruist" href="#Altruist">
 <img alt="" height="105" src="Among%20Us%20Roller%20(Bilder)/Altruist.png" width="69" class="auto-style8" /></a>&nbsp;
-<a href="#Medic_">
+<a class="smoothscroll" data-link="Medic" href="#Medic">
 <img alt="" height="105" src="Among%20Us%20Roller%20(Bilder)/Medic.png" width="58" class="auto-style8" /></a>&nbsp;
-<a href="#Engineer_">
+<a class="smoothscroll" data-link="Engineer" href="#Engineer">
 <img alt="" height="103" src="Among%20Us%20Roller%20(Bilder)/Engineer.png" width="71" class="auto-style8" /></a>&nbsp;
-<a href="#Imitator_">
+<a class="smoothscroll" data-link="Imitator" href="#Imitator">
 <img alt="" height="110" src="Among%20Us%20Roller%20(Bilder)/Imitator.png" width="59" class="auto-style8" /></a>&nbsp;
-<a href="#Mayor_">
+<a class="smoothscroll" data-link="Mayor" href="#Mayor">
 <img alt="" height="111" src="Among%20Us%20Roller%20(Bilder)/Mayor.png" width="62" class="auto-style8" /></a>&nbsp;
-<a href="#Prospecutor_">
+<a class="smoothscroll" data-link="Prospecutor" href="#Prospecutor">
 <img alt="" height="108" src="Among%20Us%20Roller%20(Bilder)/Prosecutor.png" width="81" class="auto-style8" /></a>&nbsp;
-<a href="#Swapper_">
+<a class="smoothscroll" data-link="Swapper" href="#Swapper">
 <img alt="" height="106" src="Among%20Us%20Roller%20(Bilder)/Swapper.png" width="67" class="auto-style8" /></a>&nbsp;
-<a href="#Transporter_">
+<a class="smoothscroll" data-link="Transporter" href="#Transporter">
 <img alt="" height="106" src="Among%20Us%20Roller%20(Bilder)/Transporter.png" width="97" class="auto-style8" /></a> </p>
 <p class="auto-style1">
 &nbsp;</p>
 <p class="auto-style1">
 &nbsp;</p>
 <p class="auto-style5">
-<strong><a name="NEUTRALA_ROLLER">NEUTRALA ROLLER</a></strong></p>
+<strong><a href="#NEUTRAL" name="NEUTRALA_ROLLER"><span class="auto-style17">NEUTRALA ROLLER</span></a></strong></p>
 <p class="auto-style2">
-<a href="#Amnesiac_">
+<a class="smoothscroll" data-link="Amnesiac" href="#Amnesiac">
 <img alt="" height="107" src="Among%20Us%20Roller%20(Bilder)/Amnesiac.png" width="80" class="auto-style8" /></a>&nbsp;
-<a href="#Guardian_Angel_">
+<a class="smoothscroll" data-link="Guardian Angel" href="#Guardian_Angel">
 <img alt="" height="107" src="Among%20Us%20Roller%20(Bilder)/Guardian%20Angel.png" width="157" class="auto-style8" /></a>&nbsp;
-<a href="#Survivor_">
+<a class="smoothscroll" data-link="Survivor" href="#Survivor">
 <img alt="" height="104" src="Among%20Us%20Roller%20(Bilder)/Survivor.png" width="75" class="auto-style8" /></a>&nbsp;
-<a href="#Doomsayer_">
+<a class="smoothscroll" data-link="Doomsayer" href="#Doomsayer">
 <img alt="" height="111" src="Among%20Us%20Roller%20(Bilder)/Doomslayer.png" width="101" class="auto-style8" /></a>&nbsp;
-<a href="#Executioner_">
+<a class="smoothscroll" data-link="Executioner" href="#Executioner">
 <img alt="" height="115" src="Among%20Us%20Roller%20(Bilder)/Executioner.png" width="105" class="auto-style8" /></a>
-<a href="#Jester_">
+<a class="smoothscroll" data-link="Jester" href="#Jester">
 <img alt="" height="119" src="Among%20Us%20Roller%20(Bilder)/Jester.png" width="66" class="auto-style8" /></a>&nbsp;
-<a href="#Phantom_">
+<a class="smoothscroll" data-link="Phantom" href="#Phantom">
 <img alt="" height="114" src="Among%20Us%20Roller%20(Bilder)/Phantom.png" width="72" class="auto-style8" /></a>&nbsp;
-<a href="#Arsonist_">
+<a class="smoothscroll" data-link="Arsonist" href="#Arsonist">
 <img alt="" height="117" src="Among%20Us%20Roller%20(Bilder)/Arsonist.png" width="75" class="auto-style8" /></a>&nbsp;
-<a href="#Plaguebearer_">
+<a class="smoothscroll" data-link="Plaguebearer" href="#Plaguebearer">
 <img alt="" height="108" src="Among%20Us%20Roller%20(Bilder)/Plaguebearer.png" width="143" class="auto-style8" /></a>&nbsp;
-<a href="#The_Glitch_">
+<a class="smoothscroll" data-link="The Glitch" href="#The_Glitch">
 <img alt="" height="124" src="Among%20Us%20Roller%20(Bilder)/Glitch.png" width="74" class="auto-style8" /></a>&nbsp;
-<a href="#Vampire_">
+<a class="smoothscroll" data-link="Vampire" href="#Vampire">
 <img alt="" height="111" src="Among%20Us%20Roller%20(Bilder)/Vampire.png" width="77" class="auto-style8" /></a>&nbsp;
-<a href="#Werewolf_">
+<a class="smoothscroll" data-link="Werewolf" href="#Werewolf">
 <img alt="" height="116" src="Among%20Us%20Roller%20(Bilder)/Werewolf.png" width="101" class="auto-style8" /></a><span lang="sv">
 </span>
-<img alt="" height="110" src="Among%20Us%20Roller%20(Bilder)/Juggernaut.png" width="80"></p>
+<nav id="nav-wrap">
+<ul id="nav" class="nav">
+<a class="smoothscroll" data-link="Juggernaut" href="#Juggernaut" >
+<img alt="" height="110" src="Among%20Us%20Roller%20(Bilder)/Juggernaut.png" width="80" class="auto-style8"></a>
 <p class="auto-style2">
 &nbsp;</p>
 <p class="auto-style2">
 &nbsp;</p>
 <p class="auto-style7">
-<strong><a name="IMPOSTOR_ROLLER_">IMPOSTOR ROLLER</a></strong></p>
+<strong><a href="#IMPOSTOR" name="IMPOSTOR_ROLLER_"><span class="auto-style16">IMPOSTOR ROLLER</span></a></strong></p>
 <p class="auto-style6">
-<a href="#Escapist_">
+<a href="#Escapist">
 <img alt="" height="123" src="Among%20Us%20Roller%20(Bilder)/Escapist.png" width="76" class="auto-style8" /></a>&nbsp;
-<a href="#Grenadier_">
+<a class="smoothscroll" data-link="Grenadier" href="#Grenadier">
 <img alt="" height="124" src="Among%20Us%20Roller%20(Bilder)/Grenadier.png" width="92" class="auto-style8" /></a>&nbsp;
-<a href="#Swooper_">
+<a class="smoothscroll" data-link="Swooper" href="#Swooper">
 <img alt="" height="122" src="Among%20Us%20Roller%20(Bilder)/Swooper.png" width="80" class="auto-style8" /></a>&nbsp;
-<a href="#Venerer_">
+<a class="smoothscroll" data-link="Venerer" href="#Venerer">
 <img alt="" height="122" src="Among%20Us%20Roller%20(Bilder)/Venerer.png" width="85" class="auto-style8" /></a>
-<a href="#Bomber_">
+<a class="smoothscroll" data-link="Bomber" href="#Bomber">
 <img alt="" height="124" src="Among%20Us%20Roller%20(Bilder)/Bomber.png" width="91" class="auto-style8" /></a>&nbsp;
-<a href="#Traitor_">
+<a class="smoothscroll" data-link="Traitor" href="#Traitor">
 <img alt="" height="121" src="Among%20Us%20Roller%20(Bilder)/Traitor.png" width="82" class="auto-style8" /></a>
-<a href="#Warlock_">
+<a class="smoothscroll" data-link="Warlock" href="#Warlock">
 <img alt="" height="148" src="Among%20Us%20Roller%20(Bilder)/Warlock.png" width="129" class="auto-style8" /></a>
-<a href="#Blackmailer_">
+<a class="smoothscroll" data-link="Blackmailer" href="#Blackmailer">
 <img alt="" height="127" src="Among%20Us%20Roller%20(Bilder)/Blackmailer.png" width="145" class="auto-style8" /></a>&nbsp;
-<a href="#Janitor_">
+<a class="smoothscroll" data-link="Janitor" href="#Janitor">
 <img alt="" height="138" src="Among%20Us%20Roller%20(Bilder)/Janitor.png" width="80" class="auto-style8" /></a>&nbsp;
-<a href="#Miner_">
-<img alt="" height="138" src="Among%20Us%20Roller%20(Bilder)/Miner.png" width="80" class="auto-style8" /></a><a href="#Undertaker_"><img alt="" height="138" src="Among%20Us%20Roller%20(Bilder)/Undertaker.png" width="112" class="auto-style8" /></a></p>
-<p class="auto-style3">
-&nbsp;</p>
-
-    <p class="auto-style3">&nbsp;</p>
+<a class="smoothscroll" data-link="Miner" href="#Miner">
+<img alt="" height="138" src="Among%20Us%20Roller%20(Bilder)/Miner.png" width="80" class="auto-style8" /></a><a href="#Undertaker"><img alt="" height="138" src="Among%20Us%20Roller%20(Bilder)/Undertaker.png" width="112" class="auto-style8" /></a></p>
 	<meta charset="utf-8">
 	<b id="docs-internal-guid-826fd2d7-7fff-ced0-27b3-3e98b5380168" style="font-weight:normal;">
 	<p dir="ltr" style="line-height:1.38;text-align: center;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#6d9eeb;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Crewmate </span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	roller!</span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Aurial_">Aurial</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Är ansiktsblind men kan läsa av auran på folk. </span>
-	<span style="font-family:Oswald,sans-serif;color:#6aa84f;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Grön = Crewmate</span><span style="font-family:Oswald,sans-serif;color:#bf9000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> 
-	Gul = Neutral </span>
-	<span style="font-family:Oswald,sans-serif;color:#cc0000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Röd = Impostor.<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Detective_">Detective</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	<span lang="sv">&nbsp;</span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Om rapporterar kropp , ger evidence till alla om mordet.<br><br> </span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Haunter_">Haunter</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Kan bli spöke en viss tid efter avklarat uppdrag.<br><br></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Investigator_">Investigator</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Ser fotspår!<br><br></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Mystic_">Mystic</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	The Mystic är en </span>
-	<span style="font-family:Oswald,sans-serif;color:#6d9eeb;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Crewmate </span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	som får en varning som avslöjar när någon har dött.</span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Ovanpå detta får den en pil som pekar i kroppens riktning.</span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	<br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Oracle_">Oracle</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Oracle är en </span>
-	<span style="font-family:Oswald,sans-serif;color:#6d9eeb;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Crewmate </span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	som kan få en annan spelare att bekänna information för dem.<br><br></span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Seer_">Seer</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Kan se en roll på en annan spelare. När hen gör det så ser även den 
-	spelaren din roll. Vet när någon dör då blinkar det till i skärmen .<br><br>
-	</span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Snitch_">Snitch</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Får reda på vem som är IMPOSTOR när alla uppdrag är klara. Dock vet IMPOSTORS vem du är när du bara har ett fåtal kvar!</span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Spy_">Spy</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Ses som en IMPOSTOR av IMPOSTOR-Laget men spelar med Crewmates<br>
-	<br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Tracker_">Tracker</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Kan spåra en spelare och får en pil som visar åt vilket håll spelaren 
-	befinner sig.<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Trapper_">Trapper</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Lägger fällor som dödar IMPOSTORS , Denna roll kan endast fås vid 3+ IMPOSTORS<br>
-	<br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Sheriff_">Sheriff</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Har vapen och kan välja att skjuta för att döda en IMPOSTOR men väljer han fel och skjuter han en Crewmate dör sheriffen.</span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Vampire_Hunter_">Vampire Hunter</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"><a name="Vampire_Hunter_">
-	</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">Sätter pålar i folk för att ta död på Vampyrer. Efter 5 misslyckade 
-	försök dör man själv.<br><br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Veteran_">Veteran</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Kan inte färdas i ventilationen men aktiverar “Alert” på den. Under alert 
-	är du immun mot att bli dödad utan Veteranen dödar den som försöker ta hans 
-	liv.<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Vigilante_">Vigilante</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Kan skjuta precis efter mötet. Dödar hen en crewmate tappar han alla sina skott och blir en vanlig spelare.<br><br>
-	</span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Alturist_">Alt<span lang="sv">ru</span>ist</a><span lang="sv">
-	</span></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> Kan återuppliva en död kropp men väljer 
-	då att offra sitt eget liv.<br><br></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Medic_">Medic</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Lägger sköld på valfri spelare som skyddar för ett mord.<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Engineer_">Engineer</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Fixar sabotage. Kan hänga runt i ventilationen. Om hen gör det ser 
-	Imposters det med en outline runt den.<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Imitator_">Imitator</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Imitatorn är en Crewmate som kan efterlikna döda . Under möten kan imitatören välja vem de ska imitera följande omgång från de döda. De kan välja att använda varje död spelare så många gånger de vill.
-Det bör noteras att imitatorn inte kan imitera alla besättningsroller.
-</span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	<br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Mayor_">Mayor</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Borgmästaren är en Crewmate som kan avslöja sig själv för alla.
-När det väl avslöjats kan borgmästaren inte mördas, får ytterligare 2 röster och alla kan se att de är borgmästare.
-Som en konsekvens av avslöjandet har de halvseende när lamporna är tända.<br>
-	<br>
-</span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Prospecutor_">Prospecutor</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Kan använda prospecutor i röstingen, den som han väljer får ALLA röster på 
-	sig oavsett vad dem andra röstar. Kan även se hur andra egentligen röstar.<br>
-	<br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Swapper_">Swapper</a></span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"> </span>
-	</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Byter plats på två spelar i röstningsfasen.<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Transporter_">Transporter</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	en Crewmate som kan ändra placeringen av två slumpmässiga spelare efter behag.
-Spelare som har blivit transporterade varnas med en blå blixt på skärmen.</span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	<br></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<b id="docs-internal-guid-826fd2d7-7fff-ced0-27b3-3e98b5380169" style="font-weight:normal;">
-	<span style="font-family:Oswald,sans-serif;color:#bf9000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">
-	<span style="font-family:Oswald,sans-serif;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style12">
-	Neutrala</span></span></b><span style="font-family:Oswald,sans-serif;color:#bf9000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"><b id="docs-internal-guid-826fd2d7-7fff-ced0-27b3-3e98b5380169" style="font-weight:normal;"><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"><span lang="sv">
-	</span>(spelar för sig själva, varken Crewmate eller Impostor roller</span></b><br>
-	</span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	<br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Amnesiac_">Amnesiac</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	När hen rapporterar ett mord, tar hen över rollen av den avlidna.<br><br>
-	</span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Guardian_Angel_">Guardian Angel</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Har en spelare som hen skall hålla vid liv. Vinner Guardian Angels 
-	spelare, så vinner också Guardian Angel.<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Survivor_">Survivor</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Vinner om han är kvar vid liv med det segrande laget. dock inte med 
-	(Jester &amp; Executioner)<br></span>
-	<span style="font-family:Oswald,sans-serif;color:#bf9000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	<br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Doomsayer_">Doomsayer</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Deras mål är att mörda ett visst antal spelare. När de är klara vinner de 
-	spelet.</span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	De har ytterligare en observationsförmåga som antyder vissa spelares roller.<br>
-	<br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Executioner_">Executioner</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Har en dedikerad spelare hen vill ha ut i röstnings fasen! Lyckas hen 
-	vinner hen spelet!<br>Skulle Impostors döda denna spelaren får Executioner 
-	ett nytt mål. Blir Jestern utröstad som executioner’s target vinner dock 
-	jester!<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Jester_">Jester</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Vill bli utröstad i mötet för att vinna!<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Phantom_">Phantom</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Vinner när han gjort alla uppdrag, kan inte bli utröstad men hans röst 
-	räknas inte heller.<br></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span lang="sv"><span class="auto-style11"><em>Arsonist</em></span></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Dränker spelare i olja, när alla spelare är dränkta tänder Arsonisten på 
-	alla samtidigt och vinner spelet!<br></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span lang="sv"><span class="auto-style11"><em>Plaguebearer</em></span></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Smittar alla spelare med päst! När alla spelare är sjuka&nbsp;&nbsp; 
-	blir Plaguebearern “</span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">PESTILENCE</span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">” 
-	och börjar döda med låg cooldown! Skulle 
-	IMPOSTORS 
-	försöka döda PESTILENCE dör 
-	IMPOSTORN</span><span style="font-family:Oswald,sans-serif;color:#fff2cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">!</span><span style="font-family:Oswald,sans-serif;color:#fff2cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><br class="auto-style1">
-	</span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;" class="auto-style1">
-	&nbsp;</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="The_Glitch_">The Glitch</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Har två lägen, Döda eller Hacka. (byt läge genom att trycka på en vent. 
-	Hack mode hindrar andra från att Rapportera/Venta/Sabotera och Döda!)</span><span style="font-family:Oswald,sans-serif;color:#00ff00;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"><br>
-	</span><a name="Vampire_">
-	<span style="font-family:Oswald,sans-serif;color:#674ea7;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	Vampire</span></a></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Vampyren biter sina offer och efter ett tag dör dem.<br></span>
-	<a name="Werewolf_">
-	<span style="font-family:Oswald,sans-serif;color:#85200c;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	Werewolf</span></a></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Kan gå rampage och döda sina offer. Men endast när dem är Rampage.</span><span style="font-family:Oswald,sans-serif;color:#00ff00;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"><br>
-	</span>
 	<span style="font-family:Oswald,sans-serif;color:#cc0000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Juggernaut">Juggernaut</a>!!</span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Dödar hejvilt! för varje mord sänks cooldown för nästa!</span></p>
-<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	&nbsp;</p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#ff0000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	IMPOSTER </span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	roller;</span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"><br>
-	<br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Escapist_">Escapist</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Kan teleportera till en annan plats. En gång per omgång kan eskapisten 
-	markera en plats som de sedan kan fly till senare i omgången.<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Grenadier_">Grenadier</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Kastar flashbang, gör skärmen vit ett kort tag. Grenadiern kan se i 
-	flashbangen!<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Morphling_">Morphling</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Klonar sig till någon annan spelare en kort stund.<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Swooper_">Swooper</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Kan göra sig osynlig en kort stund.<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Venerer_">Venerer</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Får förmågor efter varje mord. Efter 1:a= Camoflage 2:a=Springt 3:e=Slowar 
-	motståndare.<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Bomber_">Bombe</a><span lang="sv">r</span></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Lägger en tidsinställd bomb som sprängs.(kan även spränga IMPOSTORS)<br>
-	<br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Traitor_">Traito</a><span lang="sv">r</span></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Blir imposter efter 1 eller 2 rundor beroende på inställningarna. Kan se 
-	IMPOSTOR från start men inte tvärt om.<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Warlock_">Warlock</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Lägger en curse på en spelare. Skulle denna spelar gå nära någon annan 
-	spelar kan warlocken döda den spelaren oavsett vart han befinner sig på 
-	kartan.</span><span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1"><br>
-	<br></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Blackmailer_">Blackmailer</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Kan mutea en person i mötet.<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Janitor_">Janitor</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Städar undan kroppar! (delar cooldown med kill abilityn)<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Miner_">Miner</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Gör egen ventilation åt sig själv som hen kan hoppa emellan. (alla spelar 
-	kan se dem)<br><br></span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
-	<a name="Undertaker_">Undertaker</a></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Kan flytta kroppar!<br><br></span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	Crewnate Modifiers:<br>Aftermath -<br>Bait - <br>Diseased -<br>Frosty -<br>
-	Multitasker -<br>Torch - Ser i mörker efter alla tasks är klara!<br><br>
-	Globala modifiers:<br>Buytton Barry -<br>Flash <br>Giant <br>Lovers <br>
-	Radar<br>Sleuth<br>Tiebreaker<br><br>Impostor Modifiers:<br>Disperser<br>
-	Double Shot<br>Underdog - The Underdog är en </span>
-	<span style="font-family:Oswald,sans-serif;color:#ff0000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	IMPOSTOR </span>
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	med en förlängd kill-cooldown.</span></p>
-	<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
-	<span style="font-family:Oswald,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style1">
-	När de är den enda kvarvarande bedragaren, kommer de att få sin kill 
-	cooldown förkortad.</span></p>     
+	</p>
+	
+	<span>
+<br>
+<span style="font-family:Oswald,sans-serif;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
+<p>
+<span class="auto-style15" lang="sv"><a name="CREWMATE">CREWMATE ROLLER</a></span></p>
+	</span>
+
+	
+<section id="Aurial">
+<button type="button" class="collapsible"><a name="Aurial">Aurial</a></button>
+<div class="content">
+ <p>Är ansiktsblind men kan läsa av auran på folk.  Grön = Crewmate Gul = Neutral  Röd = Impostor.</p>
+</div>
+<section id="Detective">
+<button type="button" class="collapsible"><a name="Detective">Detective</a></button>
+<div class="content">
+  <p>Om rapporterar kropp , ger evidence till alla om mordet.</p>
+</div>
+<section id="Haunter">
+<button type="button" class="collapsible"><a name="Haunter">Haunter</a></button>
+<div class="content">
+ <p>Kan bli spöke en viss tid efter avklarat uppdrag.</p>
+</div>
+<section id="Investigator">
+<button type="button" class="collapsible"><a name="Investigator">Investigator</a></button>
+<div class="content">
+  <p>Ser fotspår!</p>
+</div>
+<section id="Mystic">
+<button type="button" class="collapsible"><a name="Mystic">Mystic</a></button>
+<div class="content">
+  <p>The Mystic är en Crewmate som får en varning som avslöjar när någon har dött. Ovanpå detta får den en pil som pekar i kroppens riktning.</p>
+</div>
+
+<section id="Oracle">
+<button type="button" class="collapsible"><a name="Oracle">Oracle</a></button>
+<div class="content">
+  <p>Oracle är en Crewmate som kan få en annan spelare att bekänna information för dem.</p>
+</div>
+
+<section id="Seer">
+<button type="button" class="collapsible"><a name="Seer">Seer</a></button>
+<div class="content">
+  <p>Kan se en roll på en annan spelare. När hen gör det så ser även den spelaren din roll. Vet när någon dör då blinkar det till i skärmen.</p>
+</div>
+
+<section id="Snitch">
+<button type="button" class="collapsible"><a name="Snitch">Snitch</a></button>
+<div class="content">
+  <p>Får reda på vem som är IMPOSTOR när alla uppdrag är klara. Dock vet IMPOSTORS vem du är när du bara har ett fåtal kvar!</p>
+</div>
+
+<section id="Spy">
+<button type="button" class="collapsible"><a name="Spy">Spy</a></button>
+<div class="content">
+  <p>Ses som en IMPOSTOR av IMPOSTOR-Laget men spelar med Crewmates.</p>
+</div>
+
+<section id="Tracker">
+<button type="button" class="collapsible"><a name="Tracker">Tracker</a></button>
+<div class="content">
+  <p>Kan spåra en spelare och får en pil som visar åt vilket håll spelaren 
+	befinner sig.</p>
+</div>
+
+<section id="Trapper">
+<button type="button" class="collapsible"><a name="Trapper">Trapper</a></button>
+<div class="content">
+  <p>Lägger fällor som dödar IMPOSTORS , Denna roll kan endast fås vid 3+ IMPOSTORS</p>
+</div>
+
+<section id="Sheriff">
+<button type="button" class="collapsible"><a name="Sheriff">Sheriff</a></button>
+<div class="content">
+  <p>Har vapen och kan välja att skjuta för att döda en IMPOSTOR men väljer han fel och skjuter han en Crewmate dör sheriffen.</p>
+</div>
+
+<section id="Vampire Hunter">
+<button type="button" class="collapsible"><a name="Vampire_Hunter">Vampire Hunter</a></button>
+<div class="content">
+  <p>Sätter pålar i folk för att ta död på Vampyrer. Efter 5 misslyckade 
+	försök dör man själv.</p>
+</div>
+
+<section id="Veteran">
+<button type="button" class="collapsible"><a name="Veteran">Veteran</a></button>
+<div class="content">
+  <p>Kan inte färdas i ventilationen men aktiverar “Alert” på den. Under alert 
+	är du immun mot att bli dödad utan Veteranen dödar den som försöker ta hans 
+	liv.</p>
+</div>
+
+<section id="Vigilante">
+<button type="button" class="collapsible"><a name="Vigilante">Vigilante</a></button>
+<div class="content">
+  <p>Kan skjuta precis efter mötet. Dödar hen en crewmate tappar han alla sina skott och blir en vanlig spelare.</p>
+</div>
+
+<section id="Altruist">
+<button type="button" class="collapsible"><a name="Altruist">Altruist</a></button>
+<div class="content">
+  <p>Kan återuppliva en död kropp men väljer 
+	då att offra sitt eget liv.</p>
+</div>
+
+
+<section id="Medic">
+<button type="button" class="collapsible"><a name="Medic">Medic</a></button>
+<div class="content">
+  <p>Lägger sköld på valfri spelare som skyddar för ett mord.</p>
+</div>
+
+
+<section id="Engineer">
+<button type="button" class="collapsible"><a name="Engineer">Engineer</a></button>
+<div class="content">
+  <p>Fixar sabotage. Kan hänga runt i ventilationen. Om hen gör det ser 
+	Imposters det med en outline runt den.</p>
+</div>
+
+
+<section id="Imitator">
+<button type="button" class="collapsible"><a name="Imitator">Imitator</a></button>
+<div class="content">
+  <p>Imitatorn är en Crewmate som kan efterlikna döda . Under möten kan imitatören välja vem de ska imitera följande omgång från de döda. De kan välja att använda varje död spelare så många gånger de vill.
+Det bör noteras att imitatorn inte kan imitera alla besättningsroller.</p>
+</div>
+
+
+<section id="Mayor">
+<button type="button" class="collapsible"><a name="Mayor">Mayor</a></button>
+<div class="content">
+  <p>Borgmästaren är en Crewmate som kan avslöja sig själv för alla.
+När det väl avslöjats kan borgmästaren inte mördas, får ytterligare 2 röster och alla kan se att de är borgmästare.
+Som en konsekvens av avslöjandet har de halvseende när lamporna är tända.</p>
+</div>
+
+
+<section id="Prospecutor">
+<button type="button" class="collapsible"><a name="Prospecutor">Prospecutor</a></button>
+<div class="content">
+  <p>Kan använda prospecutor i röstingen, den som han väljer får ALLA röster på 
+	sig oavsett vad dem andra röstar. Kan även se hur andra egentligen röstar.</p>
+</div>
+
+<section id="Swapper">
+<button type="button" class="collapsible"><a name="Swapper">Swapper</a></button>
+<div class="content">
+  <p>Byter plats på två spelar i röstningsfasen.</p>
+</div>
+
+<section id="Transporter">
+<button type="button" class="collapsible"><a name="Transporter">Transporter</a></button>
+<div class="content">
+  <p>En Crewmate som kan ändra placeringen av två slumpmässiga spelare efter behag.
+Spelare som har blivit transporterade varnas med en blå blixt på skärmen.</p>
+</div>
+
+<span>
+<br>
+<span style="font-family:Oswald,sans-serif;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
+<p>
+<span class="auto-style13" lang="sv"><a name="NEUTRAL">NEUTRALA ROLLER</a></span></p>
+	</span>
+
+
+<section id="Amnesiac">
+<button type="button" class="collapsible"><a name="Amnesiac">Amnesiac</a></button>
+<div class="content">
+  <p>När hen rapporterar ett mord, tar hen över rollen av den avlidna.</p>
+</div>
+
+<section id="Guardian Angel">
+<button type="button" class="collapsible"><a name="Guardian_Angel">Guardian Angel</a></button>
+<div class="content">
+  <p>Har en spelare som hen skall hålla vid liv. Vinner Guardian Angels 
+	spelare, så vinner också Guardian Angel.</p>
+</div>
+
+<section id="Survivor">
+<button type="button" class="collapsible"><a name="Survivor">Survivor</a></button>
+<div class="content">
+  <p>Vinner om han är kvar vid liv med det segrande laget. dock inte med 
+	(Jester & Executioner)</p>
+</div>
+
+<section id="Doomsayer">
+<button type="button" class="collapsible"><a name="Doomsayer">Doomsayer</a></button>
+<div class="content">
+  <p>Deras mål är att mörda ett visst antal spelare. När de är klara vinner de 
+	spelet. De har ytterligare en observationsförmåga som antyder vissa spelares roller.</p>
+</div>
+
+<section id="Executioner">
+<button type="button" class="collapsible"><a name="Executioner">Executioner</a></button>
+<div class="content">
+  <p>Har en dedikerad spelare hen vill ha ut i röstnings fasen! Lyckas hen 
+	vinner hen spelet!
+Skulle Impostors döda denna spelaren får Executioner 
+	ett nytt mål. Blir Jestern utröstad som executioner’s target vinner dock 
+	jester!</p>
+</div>
+
+<section id="Jester">
+<button type="button" class="collapsible"><a name="Jester">Jester</a></button>
+<div class="content">
+  <p>Vill bli utröstad i mötet för att vinna! Spela så sus då bara kan :)</p>
+</div>
+
+<section id="Phantom">
+<button type="button" class="collapsible"><a name="Phantom">Phantom</a></button>
+<div class="content">
+  <p>Vinner när han gjort alla uppdrag, kan inte bli utröstad men hans röst 
+	räknas inte heller.</p>
+</div>
+
+<section id="Arsonist">
+<button type="button" class="collapsible"><a name="Arsonist">Arsonist</a></button>
+<div class="content">
+  <p>Dränker spelare i olja, när alla spelare är dränkta tänder Arsonisten på 
+	alla samtidigt och vinner spelet!</p>
+</div>
+
+<section id="Plaguebearer">
+<button type="button" class="collapsible"><a name="Plaguebearer">Plaguebearer</a></button>
+<div class="content">
+  <p>Smittar alla spelare med päst! När alla spelare är sjuka   
+	blir Plaguebearern “PESTILENCE” och börjar döda med låg cooldown! Skulle IMPOSTORS försöka döda PESTILENCE dör IMPOSTORN!</p>
+</div>
+
+<section id="The Glitch">
+<button type="button" class="collapsible"><a name="The_Glitch">The Glitch</a></button>
+<div class="content">
+  <p>Har två lägen, Döda eller Hacka. (byt läge genom att trycka på en vent. Hack mode hindrar andra från att Rapportera/Venta/Sabotera och Döda!)</p>
+</div>
+
+<section id="Vampire">
+<button type="button" class="collapsible"><a name="Vampire">Vampire</a></button>
+<div class="content">
+  <p>Vampyren biter sina offer och efter ett tag dör dem.</p>
+</div>
+
+<section id="Werewolf">
+<button type="button" class="collapsible"><a name="Werewolf">Werewolf</a></button>
+<div class="content">
+  <p>Kan gå rampage och döda sina offer. Men kan endast döda när dem är under Rampage mode.</p>
+</div>
+
+<section id="Juggernaut">
+<button type="button" class="collapsible"><a name="Juggernaut">Juggernaut</a></button>
+<div class="content">
+  <p>Dödar hejvilt! För varje mord sänks cooldown på kill samt att du blir snabbare!</p>
+</div>
+
+<span>
+<br>
+<span style="font-family:Oswald,sans-serif;background-color:transparent;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;" class="auto-style6">
+<p>
+<span class="auto-style14" lang="sv"><a name="IMPOSTOR">IMPOSTOR ROLLER</a></span></p>
+	</span>
+
+
+<section id="Escapist">
+<button type="button" class="collapsible"><a name="Escapist">Escapist</a></button>
+<div class="content">
+  <p>Kan teleportera till en annan plats. En gång per omgång kan eskapisten 
+	markera en plats som de sedan kan fly till senare i omgången.</p>
+</div>
+
+<section id="Grenadier">
+<button type="button" class="collapsible"><a name="Grenadier">Grenadier</a></button>
+<div class="content">
+  <p>Kastar flashbang, gör skärmen vit ett kort tag. Grenadiern kan se i flashbangen!</p>
+</div>
+
+<section id="Morphling">
+<button type="button" class="collapsible"><a name="Morphling">Morphling</a></button>
+<div class="content">
+  <p>Klonar sig till någon annan spelare en kort stund.
+</p>
+</div>
+
+<section id="Swooper">
+<button type="button" class="collapsible"><a name="Swooper">Swooper</a></button>
+<div class="content">
+  <p>Kan göra sig osynlig en kort stund. (kan döda medan han är osynlig)</p>
+</div>
+
+<section id="Venerer">
+<button type="button" class="collapsible"><a name="Venerer">Venerer</a></button>
+<div class="content">
+  <p>Får förmågor efter varje mord. Efter 1:a= Camoflage 2:a=Springt 3:e=Slowar motståndare.
+</p>
+</div>
+
+<section id="Bomber">
+<button type="button" class="collapsible"><a name="Bomber">Bomber</a></button>
+<div class="content">
+  <p>Lägger en tidsinställd bomb som sprängs (upp till 5 kills och kan även spränga IMPOSTORS)</p>
+</div>
+
+<section id="Traitor">
+<button type="button" class="collapsible"><a name="Traitor">Traitor</a></button>
+<div class="content">
+  <p>Blir imposter efter 1 eller 2 rundor beroende på inställningarna. Kan se IMPOSTOR från start men inte tvärt om.</p>
+</div>
+
+<section id="Warlock">
+<button type="button" class="collapsible"><a name="Warlock">Warlock</a></button>
+<div class="content">
+  <p>Lägger en curse på en spelare. Skulle denna spelar gå nära någon annan spelar kan warlocken döda den spelaren oavsett vart han befinner sig på kartan.</p>
+</div>
+
+<section id="Blackmailer">
+<button type="button" class="collapsible"><a name="Blackmailer">Blackmailer</a></button>
+<div class="content">
+  <p>Kan välja en person under matchens gång (som hen är nära) att mutea en person i nästkommande möte.</p>
+</div>
+
+<section id="Janitor">
+<button type="button" class="collapsible"><a name="Janitor">Janitor</a></button>
+<div class="content">
+  <p>Städar undan kroppar! (delar cooldown med kill abilityn)</p>
+</div>
+
+<section id="Miner">
+<button type="button" class="collapsible"><a name="Miner">Miner</a></button>
+<div class="content">
+  <p>Gör egen ventilation åt sig själv som hen kan hoppa emellan. (alla spelar kan se dem)</p>
+</div>
+
+<section id="Undertaker">
+<button type="button" class="collapsible"><a name="Undertaker">Undertaker</a></button>
+<div class="content">
+  <p>Kan flytta kroppar!</p>
+</div>
+
+<section>
+<break>
+	<br><span lang="sv">MODIFIERS</span><br><br>Crewnate Modifiers:
+Aftermath -
+Bait - 
+Diseased -
+Frosty -
+Multitasker -
+Torch - Ser i mörker efter alla tasks är klara!
+
+Globala modifiers:
+Buytton Barry -
+Flash 
+Giant 
+Lovers 
+Radar
+Sleuth
+Tiebreaker
+
+Impostor Modifiers:
+Disperser
+Double Shot
+Underdog - The Underdog är en IMPOSTOR med en förlängd kill-cooldown.
+När de är den enda kvarvarande bedragaren, kommer de att få sin kill cooldown förkortad.
+
+
+</break>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var navLink = document.getElementsByClassName("smoothscroll");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+for (i = 0; i < navLink.length; i++) {
+  navLink[i].addEventListener("click", function() {
+    var link = this.dataset.link;
+    var sectionId = document.getElementById(link);
+
+    var divToOpen = sectionId.querySelector(".collapsible");
+    
+    divToOpen.classList.toggle("active");
+    var content = divToOpen.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
     <script>
         $( ".change" ).on("click", function() {
             if( $( "body" ).hasClass( "dark" )) {
@@ -623,5 +690,6 @@ Spelare som har blivit transporterade varnas med en blå blixt på skärmen.</sp
             }
         });
     </script>
+
 </body>
 </html>
