@@ -17,7 +17,7 @@
 <style>
 .collapsible {
   background-color: #777;
-  color: white;
+  color: #FFFFFF;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -272,12 +272,12 @@
 <section id="Detective">
 <button type="button" class="collapsible"><a name="Detective">Detective</a></button>
 <div class="content">
-  <p>Om rapporterar kropp , ger evidence till alla om mordet.</p>
+  <p>Detective har inspect och examine. Du kan inspecta kroppar, efter det måste du hitta folk och trycka examine för att se ifall den är ond eller god. (Lyser rött / grönt)</p>
 </div>
 <section id="Haunter">
 <button type="button" class="collapsible"><a name="Haunter">Haunter</a></button>
 <div class="content">
- <p>Kan bli spöke en viss tid efter avklarat uppdrag.</p>
+ <p>Första personen som dör blir synligt spöke efter första mötet.</p>
 </div>
 <section id="Investigator">
 <button type="button" class="collapsible"><a name="Investigator">Investigator</a></button>
@@ -299,7 +299,8 @@
 <section id="Seer">
 <button type="button" class="collapsible"><a name="Seer">Seer</a></button>
 <div class="content">
-  <p>Kan se en roll på en annan spelare. När hen gör det så ser även den spelaren din roll. Vet när någon dör då blinkar det till i skärmen.</p>
+  <p>Kan se en roll på en annan spelare. När hen gör det så ser även den spelaren din roll. 
+  Vet när någon dör då blinkar det till i skärmen.</p>
 </div>
 
 <section id="Snitch">
@@ -311,7 +312,7 @@
 <section id="Spy">
 <button type="button" class="collapsible"><a name="Spy">Spy</a></button>
 <div class="content">
-  <p>Ses som en IMPOSTOR av IMPOSTOR-Laget men spelar med Crewmates.</p>
+  <p>Ses som en IMPOSTOR av IMPOSTOR-Laget men spelar med Crewmates.(Funkar ej just nu) - Får dock extra information vid admin table (färger på alla spelare i varje rum)</p>
 </div>
 
 <section id="Tracker">
@@ -336,22 +337,22 @@
 <section id="Vampire Hunter">
 <button type="button" class="collapsible"><a name="Vampire_Hunter">Vampire Hunter</a></button>
 <div class="content">
-  <p>Sätter pålar i folk för att ta död på Vampyrer. Efter 5 misslyckade 
-	försök dör man själv.</p>
+  <p>Sätter pålar i folk för att ta död på Vampyrer (är det en vampyr dör dem, är det crewmates händer ingenting). Efter 3 misslyckade 
+	försök dör man själv (sålänge en vampyr fortfarande är vid liv).</p>
 </div>
 
 <section id="Veteran">
 <button type="button" class="collapsible"><a name="Veteran">Veteran</a></button>
 <div class="content">
   <p>Kan inte färdas i ventilationen men aktiverar “Alert” på den. Under alert 
-	är du immun mot att bli dödad utan Veteranen dödar den som försöker ta hans 
-	liv.</p>
+	är du immun mot att bli dödad utan Veteranen dödar den som försöker ta hans liv.</p>
 </div>
 
 <section id="Vigilante">
 <button type="button" class="collapsible"><a name="Vigilante">Vigilante</a></button>
 <div class="content">
-  <p>Kan skjuta precis efter mötet. Dödar hen en crewmate tappar han alla sina skott och blir en vanlig spelare.</p>
+  <p>Kan skjuta under mötet genom att gissa på impostors, 
+  gissar hen däremot fel så dör hen själv.</p>
 </div>
 
 <section id="Altruist">
@@ -394,17 +395,18 @@ Som en konsekvens av avslöjandet har de halvseende när lamporna är tända.</p
 </div>
 
 
-<section id="Prospecutor">
-<button type="button" class="collapsible"><a name="Prospecutor">Prospecutor</a></button>
+<section id="Prosecutor">
+<button type="button" class="collapsible"><a name="Prospecutor">Prosecutor</a></button>
 <div class="content">
-  <p>Kan använda prospecutor i röstingen, den som han väljer får ALLA röster på 
-	sig oavsett vad dem andra röstar. Kan även se hur andra egentligen röstar.</p>
+  <p>Kan använda prospecute i ett möte, den som han väljer får ALLA röster på 
+	sig oavsett vad dem andra röstar. Röstar han på fel (Crewmate) så dör han själv.
+	Kan enbart använda denna prosecute ability en gång under ett game.</p>
 </div>
 
 <section id="Swapper">
 <button type="button" class="collapsible"><a name="Swapper">Swapper</a></button>
 <div class="content">
-  <p>Byter plats på två spelar i röstningsfasen.</p>
+  <p>Byter plats på två spelar i röstningsfasen, röster följer också med.</p>
 </div>
 
 <section id="Transporter">
@@ -453,9 +455,7 @@ Spelare som har blivit transporterade varnas med en blå blixt på skärmen.</p>
 <button type="button" class="collapsible"><a name="Executioner">Executioner</a></button>
 <div class="content">
   <p>Har en dedikerad spelare hen vill ha ut i röstnings fasen! Lyckas hen 
-	vinner hen spelet!
-Skulle Impostors döda denna spelaren får Executioner 
-	ett nytt mål. Blir Jestern utröstad som executioner’s target vinner dock 
+	vinner hen spelet! Blir Jestern utröstad som executioner’s target vinner dock 
 	jester!</p>
 </div>
 
@@ -475,8 +475,8 @@ Skulle Impostors döda denna spelaren får Executioner
 <section id="Arsonist">
 <button type="button" class="collapsible"><a name="Arsonist">Arsonist</a></button>
 <div class="content">
-  <p>Dränker spelare i olja, när alla spelare är dränkta tänder Arsonisten på 
-	alla samtidigt och vinner spelet!</p>
+  <p>Dränker spelare i olja, när en (eller flera spelare) är dränkta tänder Arsonisten på 
+	alla samtidigt (hen måste vara nära en oljad spelare, är han sist kvar vinner hen spelet).</p>
 </div>
 
 <section id="Plaguebearer">
@@ -489,19 +489,20 @@ Skulle Impostors döda denna spelaren får Executioner
 <section id="The Glitch">
 <button type="button" class="collapsible"><a name="The_Glitch">The Glitch</a></button>
 <div class="content">
-  <p>Har två lägen, Döda eller Hacka. (byt läge genom att trycka på en vent. Hack mode hindrar andra från att Rapportera/Venta/Sabotera och Döda!)</p>
+  <p>Har flera lägen, Hacka, Mimmic eller döda. Mimmic fungerar som morhpling men du kan välja vem som helst i hela lobbyn. (byt läge genom att trycka på en vent. 
+  Hack mode hindrar den närmaste från att Rapportera/Venta/Sabotera och Döda!)</p>
 </div>
 
 <section id="Vampire">
 <button type="button" class="collapsible"><a name="Vampire">Vampire</a></button>
 <div class="content">
-  <p>Vampyren biter sina offer och efter ett tag dör dem.</p>
+  <p>Vampyren biter och smittar sitt första offer, efter det fungerar den som en kill knapp.</p>
 </div>
 
 <section id="Werewolf">
 <button type="button" class="collapsible"><a name="Werewolf">Werewolf</a></button>
 <div class="content">
-  <p>Kan gå rampage och döda sina offer. Men kan endast döda när dem är under Rampage mode.</p>
+  <p>Kan gå rampage och döda sina offer. Men kan endast döda när dem är under Rampage mode, 10s kill cooldown.</p>
 </div>
 
 <section id="Juggernaut">
@@ -521,14 +522,14 @@ Skulle Impostors döda denna spelaren får Executioner
 <section id="Escapist">
 <button type="button" class="collapsible"><a name="Escapist">Escapist</a></button>
 <div class="content">
-  <p>Kan teleportera till en annan plats. En gång per omgång kan eskapisten 
-	markera en plats som de sedan kan fly till senare i omgången.</p>
+  <p>Kan teleportera till en annan plats. En gång per omgång kan escapisten 
+	kan markera en plats som de sedan kan fly till senare i omgången.</p>
 </div>
 
 <section id="Grenadier">
 <button type="button" class="collapsible"><a name="Grenadier">Grenadier</a></button>
 <div class="content">
-  <p>Kastar flashbang, gör skärmen vit ett kort tag. Grenadiern kan se i flashbangen!</p>
+  <p>Kastar flashbang, gör skärmen vit ett kort tag. Alla impostors kan se i flashbangen!</p>
 </div>
 
 <section id="Morphling">
@@ -547,7 +548,7 @@ Skulle Impostors döda denna spelaren får Executioner
 <section id="Venerer">
 <button type="button" class="collapsible"><a name="Venerer">Venerer</a></button>
 <div class="content">
-  <p>Får förmågor efter varje mord. Efter 1:a= Camoflage 2:a=Springt 3:e=Slowar motståndare.
+  <p>Får förmågor efter varje mord. Efter 1:a= Camoflage 2:a=Snabb 3:e=Slowar motståndare.
 </p>
 </div>
 
@@ -560,7 +561,7 @@ Skulle Impostors döda denna spelaren får Executioner
 <section id="Traitor">
 <button type="button" class="collapsible"><a name="Traitor">Traitor</a></button>
 <div class="content">
-  <p>Blir imposter efter 1 eller 2 rundor beroende på inställningarna. Kan se IMPOSTOR från start men inte tvärt om.</p>
+  <p>Blir imposter efter 1 eller 2 rundor beroende på inställningarna. Kan då döda som vanlig impostor</p>
 </div>
 
 <section id="Warlock">
@@ -590,7 +591,7 @@ Skulle Impostors döda denna spelaren får Executioner
 <section id="Undertaker">
 <button type="button" class="collapsible"><a name="Undertaker">Undertaker</a></button>
 <div class="content">
-  <p>Kan flytta kroppar!</p>
+  <p>Kan flytta döda kroppar för att gömma</p>
 </div>
 
 <section>
